@@ -103,7 +103,7 @@ public class JweService implements IOtaBaseService {
             hotelDetailDTO.setBaseInfo(hotelBaseInfo);
             return OtaProxyResponse.<HotelDetailDTO>builder().data(hotelDetailDTO).code(jweHotelDetailBO.getStatus()).message(jweHotelDetailBO.getMsg()).build();
         } else {
-            //失败返回
+            //失败返回-李刚
             return OtaProxyResponse.<HotelDetailDTO>builder().code(jweHotelDetailBO.getStatus()).message(jweHotelDetailBO.getMsg()).build();
 
         }
